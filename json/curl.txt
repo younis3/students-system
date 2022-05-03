@@ -1,0 +1,28 @@
+curl syntax
+-----------
+curl -X POST --url http://localhost:8080/student/add -H "Content-Type: application/json" -d @data2.json
+
+curl -X POST --url http://localhost:8080/student/update/61671f643aa9a80feb9d882e -H "Content-Type: application/json" -d @data3.json
+
+
+(curl -X GET for GET requests)
+
+
+
+
+note
+-------
+before running curl command in cmd app should be running in json version
+and command location should be in same directory of data.json file
+variables in data.json should be same as req.body.X
+
+
+
+
+curl tests in this project
+--------------------------
+GET on /student: CURL TESTED: Working great
+POST on /student (filter): CURL TESTED: Working great
+POST on /student/add: CURL TESTED: Working great
+POST on /student/update/xxx: CURL TESTED: Working great both on updatestudent and addcourse actions
+POST on /student/delete/xxx: CURL TESTED: Working great

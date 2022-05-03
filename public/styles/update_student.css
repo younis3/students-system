@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  transform: scale(0.75);
+  transform-origin: -100%, 50%;
+  background-color: #4e5857;
+  background-image: linear-gradient(90deg, #e2e2e2ea 0%, #6b6d6b 100%);
+}
+
+.allDiv {
+  border: 1px solid black;
+  padding-bottom: 2rem;
+  margin: auto;
+  max-width: 950px;
+  margin-top: -3rem;
+}
+
+form {
+  width: 70%;
+  max-width: 800px;
+  padding: 2rem;
+  margin: auto;
+}
+input {
+  margin: auto;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 90%;
+  height: 3rem;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+}
+
+form input[type="submit"] {
+  color: rgb(36, 31, 41);
+  font-size: 30px;
+  height: 4rem;
+  cursor: pointer;
+  padding: 2px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(108, 175, 88);
+  width: 72%;
+  max-width: 28rem;
+  transition: 0.3s;
+  margin-top: 2.6rem;
+}
+
+form input[type="submit"]:hover {
+  color: rgb(108, 175, 88);
+  background-color: rgb(255, 255, 255);
+}
+
+.slct {
+  text-align: center;
+  margin-top: 0.6vh;
+}
+.slct label {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.slct select {
+  border: none;
+  width: 30%;
+  height: 4rem;
+  font-size: 26px;
+  color: rgb(134, 134, 134);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
+  width: 90%;
+  max-width: 650px;
+  background-color: rgba(84, 85, 88, 0.315);
+}
+
+.table caption {
+  font-size: xx-large;
+  color: rgb(29, 105, 55);
+  font-weight: 600;
+  border-bottom: solid 0.2px rgb(117, 115, 115);
+  padding-bottom: 1.25vh;
+  text-align: left;
+  text-shadow: #6b6d6b;
+  padding: 2px;
+}
+
+.table th {
+  padding-top: 1.25vh;
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.table td {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+}
+
+.table #noCourses {
+  color: rgb(163, 53, 53);
+}
+
+.table input[type="submit"],
+.table input[type="button"] {
+  font-size: 20px;
+  padding: 4px;
+  height: 2.5rem;
+  width: 100%;
+  transition: 0.3s;
+}
+
+#dlt,
+#updt {
+  width: 5rem;
+  max-width: 5rem;
+  margin: -3rem;
+  margin-top: -1.2rem;
+}
+#updt {
+  margin-right: -3.2rem;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+#updts {
+  margin: 2px;
+}
+
+#dlt {
+  background-color: rgba(255, 0, 0, 0.87);
+
+  margin-right: auto;
+  text-align: center;
+}
+
+#dlt:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+.lnk {
+  text-align: center;
+}
+
+.lnk a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+#dlt {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table td {
+  justify-content: space-around;
+  padding-left: 8px;
+  padding-right: 8px;
+}

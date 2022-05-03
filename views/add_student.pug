@@ -1,0 +1,27 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Add Student
+  link(rel='stylesheet' href='/styles/add_student.css')
+  script(src="/scripts/helper_functions.js") 
+body(onload="selectedOption()")
+  .allDiv
+    form(action="/student/add" method="POST")
+      input(type='text' name='id' placeholder='ID' required='' value=id)
+      input(type='text' name='name' placeholder='Name' required='' value=name)
+      input(type='text' name='city' placeholder='City' required='' value=city)
+      .slct
+        label(for='toar') Toar:
+        select#toar(name='toar')
+          option(value=toar hidden selected=`${toar}`) #{toar}
+          option(value='BA') BA
+          option(value='MA') MA
+          option(value='PHD') PHD
+      input(type='submit' value='Add Student')
+      .note
+        if name
+          p Successfully Added New Student!
+      .lnk
+        a(href='/student/') Students List

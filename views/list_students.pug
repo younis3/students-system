@@ -1,0 +1,54 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Students List
+  link(rel='stylesheet' href='/styles/list_students.css')
+body
+  .allDiv
+    .formDiv
+      form.fltrForm(action='/student' method='POST')
+        .slct
+          label(for='toar') Toar:
+          select#toar(name='toar')
+            option(value='all') View-All
+            option(value='BA') BA
+            option(value='MA') MA
+            option(value='PHD') PHD
+        input(type='text' name='city' placeholder='City')
+        input(type='number' name='avg' placeholder='Min Avg Grade')
+        input(type='submit' value='Filter')
+    .tableDiv
+      table.table
+        caption Students
+        tr
+          if !res.length
+              th(id='noStudentsFiltered') No students found with that filter
+          else
+              th ID
+              th Name
+              for obj in res
+                tr
+                  td #{obj.id} 
+                  td #{obj.name}
+                  td
+                    form(name='dlt' id='removeForm' method='POST')
+                      input(type="hidden" id="hiddenInput" value=`${obj._id}`)
+                      input(type='button'  id='dlt' data-id=`${obj._id}` value='Delete' onclick='confirmDelete(this.dataset.id)')
+                      script.
+                        function confirmDelete(x){
+                          console.log(x);
+                          if (confirm("Are you sure you want to delete this student?")){
+                            let dltForm = document.getElementById("removeForm");
+                            dltForm.action = `/student/delete/${x}`;
+                            dltForm.submit();
+                          }
+                          else{
+                            return;
+                          }
+                        }
+                  td
+                    input(type='button' id='updts' value='Update' onclick=`location.href = '/student/update/${obj._id}'`)
+    .lnk
+      a(href='/student/add') Add New Student

@@ -1,0 +1,48 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Update Student 
+  link(rel='stylesheet' href='/styles/update_student.css')
+  script(src="/scripts/helper_functions.js") 
+body(onload="selectedOption()")
+  .allDiv
+    .updateStudentDtlsDiv
+        form(action=`/student/update/${pageid}` method="POST")
+            input(type='hidden' name='action' value='updatestudent')
+            input(type='text' name='id' value=student_id disabled)
+            input(type='text' name='name' value=name required='')
+            input(type='text' name='city' value=city required='')
+            .slct
+                label(for='toar') Toar:
+                select(name='toar' id='toar')
+                    option(value=toar hidden selected=`${toar}`) #{toar}
+                    option(value='BA') BA
+                    option(value='MA') MA
+                    option(value='PHD') PHD                
+            input(type='submit' value='Update Student')
+    .tableDiv
+      table.table
+        caption Student Courses
+        tr
+            if !courses.length
+                th(id='noCourses') No Courses Found
+            else
+                th Course
+                th Grade
+                for course in courses
+                    tr
+                      td #{course.cid} 
+                      td #{course.grade}
+    .addCoursesDiv
+      .addCourseForm
+        form(action=`/student/update/${pageid}` method="POST")
+          input(type='hidden' name='action' value='addcourse')
+          input(type='text' name='courseid' placeholder='Course ID' required='')
+          input(type='number' name='grade' placeholder='Grade' required='')
+          input(type='submit' value='Add New Course')
+
+    .lnk
+        a(href='/student/') Students List
+

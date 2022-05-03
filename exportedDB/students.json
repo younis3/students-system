@@ -1,0 +1,135 @@
+[{
+  "_id": {
+    "$oid": "616799d57470735910242bd3"
+  },
+  "id": "205558765",
+  "name": "Joana",
+  "city": "Haifa",
+  "toar": "phd",
+  "courses": [
+    {
+      "cid": "1232",
+      "grade": 99,
+      "_id": {
+        "$oid": "61679d96d27b6ba55a9d452c"
+      }
+    },
+    {
+      "cid": "2211",
+      "grade": 96,
+      "_id": {
+        "$oid": "61679df1909646d48be1b05b"
+      }
+    },
+    {
+      "cid": "3233",
+      "grade": 95,
+      "_id": {
+        "$oid": "61679e38909646d48be1b0c0"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61679ed2909646d48be1b147"
+  },
+  "id": "584485454",
+  "name": "Yossi",
+  "city": "Tel Aviv",
+  "toar": "ma",
+  "courses": [
+    {
+      "cid": "5252",
+      "grade": 89,
+      "_id": {
+        "$oid": "61679edc909646d48be1b154"
+      }
+    },
+    {
+      "cid": "1454",
+      "grade": 85,
+      "_id": {
+        "$oid": "6167a0f0909646d48be1b36a"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61679f01909646d48be1b166"
+  },
+  "id": "525458874",
+  "name": "Yara",
+  "city": "Haifa",
+  "toar": "ba",
+  "courses": [
+    {
+      "cid": "8588",
+      "grade": 80,
+      "_id": {
+        "$oid": "61679f16909646d48be1b17e"
+      }
+    },
+    {
+      "cid": "7477",
+      "grade": 70,
+      "_id": {
+        "$oid": "61679f31909646d48be1b187"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6167a026909646d48be1b265"
+  },
+  "id": "525547877",
+  "name": "Yosef",
+  "city": "Hadera",
+  "toar": "ma",
+  "courses": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6167b9cfbef188e4524b8663"
+  },
+  "id": "458887452",
+  "name": "Noor",
+  "city": "Afula",
+  "toar": "ma",
+  "courses": [
+    {
+      "cid": "3322",
+      "grade": 74,
+      "_id": {
+        "$oid": "6167b9e9bef188e4524b8674"
+      }
+    },
+    {
+      "cid": "8565",
+      "grade": 79,
+      "_id": {
+        "$oid": "6167b9f1bef188e4524b867d"
+      }
+    },
+    {
+      "cid": "8855",
+      "grade": 84,
+      "_id": {
+        "$oid": "6167ba02bef188e4524b8688"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6167cbeef7ed08c1e372f6ff"
+  },
+  "id": "234341212",
+  "name": "Kefah",
+  "city": "Hadera",
+  "toar": "ba",
+  "courses": [],
+  "__v": 0
+}]
